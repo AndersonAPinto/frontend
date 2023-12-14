@@ -8,7 +8,6 @@
     text-align: center;
     color: rgb(210, 207, 230);
     position: relative;
-      
 }
 .scroll_horizontal {
     display: flex;
@@ -20,6 +19,7 @@
 .scroll_horizontal div {
     flex-shrink: 0;
     color: rgb(212, 228, 69);
+    cursor: pointer;
 }
 
 h1{
@@ -31,9 +31,9 @@ h2{
     color: rgb(212, 228, 69);
 }
 #text-inf{
-    font-size:10px;
+    font-size:12px;
     color: black;
-    font-weight: bold;
+    font-weight:bolder;
 }
 input, input::placeholder, input:focus{
     outline: none;
