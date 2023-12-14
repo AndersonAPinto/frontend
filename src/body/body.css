@@ -1,18 +1,20 @@
 .container{
     margin: auto;
-    padding: 2px;
+    padding: 20px;
     width: 40%;
     height: 70%;
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     text-align: center;
     color: rgb(217, 213, 236);
+    position: relative;
    
     
 }
 .scroll_horizontal {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
+    white-space: nowrap;
     gap: 10px; /* Espaço entre os itens */
 }
 
@@ -22,7 +24,8 @@
 }
 
 h1{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 h2{
     margin-top: 20px;
@@ -36,10 +39,39 @@ input, input::placeholder, input:focus{
     text-align: center;
     background-color: rgba(185, 182, 178, 0.89);
     width: 130px;
-    padding: 2px;
+    padding: 1px;
 }
 .paragraf{
     margin-bottom: 1px;
     font-size: medium;
-    
+}
+
+.scroll-left {
+    border: solid rgb(6, 112, 11);
+    border-width: 0 3px 3px 0;
+    display: flex;
+    padding: 6px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    background-color: rgba(0, 128, 0, 0);
+    border-radius: 4px;
+    left: -16px;
+    top: 20px;
+    position: relative;
+
+}
+
+.scroll-right {
+    border: solid rgb(6, 112, 11);
+    border-width: 3px 0  0 3px;
+    display: flex;
+    padding: 6px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    background-color: rgba(0, 128, 0, 0);
+    border-radius: 4px;
+    right: -548px;
+    top: -18px;
+    position: relative;
+
 }
