@@ -6,10 +6,9 @@
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     text-align: center;
-    color: rgb(217, 213, 236);
+    color: rgb(210, 207, 230);
     position: relative;
-   
-    
+      
 }
 .scroll_horizontal {
     display: flex;
@@ -31,13 +30,16 @@ h2{
     margin-top: 20px;
     color: rgb(212, 228, 69);
 }
-
-
+#text-inf{
+    font-size:10px;
+    color: black;
+    font-weight: bold;
+}
 input, input::placeholder, input:focus{
     outline: none;
     border-radius: 10px;
     text-align: center;
-    background-color: rgba(185, 182, 178, 0.89);
+    background-color: rgba(185, 182, 178, 0.87);
     width: 130px;
     padding: 1px;
 }
@@ -45,7 +47,9 @@ input, input::placeholder, input:focus{
     margin-bottom: 1px;
     font-size: medium;
 }
-
+.scroll-left, .scroll-right:hover{
+    cursor: pointer;
+}
 .scroll-left {
     border: solid rgb(6, 112, 11);
     border-width: 0 3px 3px 0;
@@ -58,9 +62,7 @@ input, input::placeholder, input:focus{
     left: -16px;
     top: 20px;
     position: relative;
-
 }
-
 .scroll-right {
     border: solid rgb(6, 112, 11);
     border-width: 3px 0  0 3px;

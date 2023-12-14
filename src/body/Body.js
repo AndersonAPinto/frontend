@@ -1,9 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import '../body/body.css';
 import api from '../services/api';
-import ReactDOM from 'react-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 
 function Body() {
     const [siglas, setSiglas] = useState([]);
@@ -16,13 +13,13 @@ function Body() {
     const scrollRef = useRef(null);
     const handleScrollLeft = () => {
         if (scrollRef.current) {
-            scrollRef.current.scrollLeft -= 100; // Ajuste este valor conforme necessário
+            scrollRef.current.scrollLeft -= 150; // Ajuste este valor conforme necessário
         }
     };
 
     const handleScrollRight = () => {
         if (scrollRef.current) {
-            scrollRef.current.scrollLeft += 100; // Ajuste este valor conforme necessário
+            scrollRef.current.scrollLeft += 150; // Ajuste este valor conforme necessário
         }
     };
 
@@ -80,8 +77,8 @@ function Body() {
                 <input
                     value={potencValue}
                     onChange={(e) => setpotencValue(parseFloat(e.target.value))}
-                    placeholder='Valor em KWh'
                     disabled={!InputActived} />
+                    <p id='text-inf'>Valor em KWh</p>
                 {teste && teste.map((item, index) => (
                     item.ColSigla === selectedSigla && <p className='paragraf' key={index}>Custo de Recarga: <h1>R$ {item.Custo_Recarga_total_R$}*</h1>
                         <p>*A alíquota do ICMS varia de acordo com cada estado, podendo ir de cerca de 18% a 35%</p>
