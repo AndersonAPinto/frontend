@@ -1,20 +1,45 @@
 .container{
     margin: 20px auto;
-    width: 70%;
+    
+    width: 40%;
     height: 70%;
-    background-color: #fff;
-    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    padding: 30px 20px;
+    text-align: center;
+    color: rgb(217, 213, 236);
+   
+    
 }
 .scroll_horizontal {
     display: flex;
     overflow-x: auto;
-    padding: 40px;
+    padding: 10px;
     gap: 10px; /* Espaço entre os itens */
 }
 
 .scroll_horizontal div {
     flex-shrink: 0;
-    color: black;
+    color: rgb(212, 228, 69);
+}
+
+h1{
+    margin-bottom: 50px;
+}
+h2{
+    margin-top: 20px;
+    color: rgb(212, 228, 69);
+}
+
+
+input, input::placeholder, input:focus{
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(185, 182, 178, 0.89);
+    width: 130px;
+    padding: 2px;
+}
+.paragraf{
+    margin-bottom: 1px;
+    
 }

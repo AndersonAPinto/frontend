@@ -7,7 +7,7 @@ import Body from './body/Body';
 function App() {
   return (
     <>
-      <Header title={'Título'} subtitle={["Sobre", "Como Funciona?", "Taxas"]} />
+      <Header title={''} subtitle={["Sobre o site", "Como Funciona?", "Taxas na conta"]} />
       <Body />
     </>
   );

@@ -45,7 +45,7 @@ function Body() {
     return (
         <div className="container">
             <h1>Custo de Recarga de Veículos Elétricos</h1>
-            <h3>Escolha a distribuidora de Luz</h3>
+            <h3>Escolha a distribuidora de Luz:</h3>
             <div className="scroll_horizontal">
                 {siglas.map((data, index) => (
                     <div key={index} style={{ marginRight: '10px' }} onClick={() => returnSigla(data)} >
@@ -53,20 +53,18 @@ function Body() {
                     </div>
                 ))}
             </div>
-            <div>
-                <div>
-                    <h3>{selectedSigla}</h3>
-                </div>
-            </div>
-            <div >
+            <div><h2>{selectedSigla}</h2></div>
+            <div className='navInput'>
                 <strong>Digite a Potência da Bateria</strong>
+            </div>
+            <div>
                 <input
                     value={potencValue}
                     onChange={(e) => setpotencValue(parseFloat(e.target.value))}
                     placeholder='Valor em KWh'
                     disabled={!InputActived} />
                     {teste && teste.map((item, index) =>(
-                        item.ColSigla === selectedSigla && <p key={index}>Custo de Recarga: R$ {item.Custo_Recarga_total_R$}</p>
+                        item.ColSigla === selectedSigla && <p className='paragraf' key={index}>Custo de Recarga: <h1>R$ {item.Custo_Recarga_total_R$}</h1></p>
                     ))}
             </div>
         </div>
