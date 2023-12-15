@@ -7,7 +7,7 @@ import Body from './body/Body';
 function App() {
   return (
     <>
-      <Header title={''} subtitle={["Sobre o site", "Como Funciona?", "Taxas na conta"]} />
+      <Header title={''} subtitle={["Instagram: @carros_eletricosBr"]} />
       <Body />
     </>
   );
