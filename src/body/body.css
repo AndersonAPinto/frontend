@@ -50,6 +50,14 @@ input, input::placeholder, input:focus{
 .scroll-left, .scroll-right:hover{
     cursor: pointer;
 }
+.scroll-right:hover{
+    border: solid rgb(8, 228, 19) ;
+    border-width: 3px 0 0 3px;
+}
+.scroll-left:hover{
+    border: solid rgb(8, 228, 19) ;
+    border-width: 0 3px 3px 0;
+}
 .scroll-left {
     border: solid rgb(6, 112, 11);
     border-width: 0 3px 3px 0;
