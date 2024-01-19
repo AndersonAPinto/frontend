@@ -82,7 +82,7 @@ function Body() {
                     <p id='text-inf'>Valor em KWh</p>
                 {teste && teste.map((item, index) => (
                     item.ColSigla === selectedSigla && <p className='paragraf' key={index}>Custo de Recarga: <h1>R$ {item.Custo_Recarga_total_R$}*</h1>
-                        <p>*A alíquota do ICMS varia de acordo com cada estado, podendo ir de cerca de 18% a 35%</p>
+                        <p>*A alíquota do ICMS varia de acordo com cada estado, podendo ser de 18% a 35%</p>
                         <p>**A soma de PIS e COFINS geralmente fica em torno de 9% a 10%</p></p>
 
                 ))}

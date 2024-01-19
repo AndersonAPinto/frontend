@@ -68,7 +68,7 @@ input, input::placeholder, input:focus{
     background-color: rgba(0, 128, 0, 0);
     border-radius: 4px;
     left: -16px;
-    top: 20px;
+    top: 37px;
     position: relative;
 }
 .scroll-right {
@@ -81,7 +81,7 @@ input, input::placeholder, input:focus{
     background-color: rgba(0, 128, 0, 0);
     border-radius: 4px;
     right: -548px;
-    top: -18px;
+    top: 21spx;
     position: relative;
 
 }
