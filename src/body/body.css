@@ -85,3 +85,12 @@ input, input::placeholder, input:focus{
     position: relative;
 
 }
+
+@media (max-width: 650px) {
+    .container{
+        width: 75%;
+        height: 20%;
+    }
+}{
+
+}

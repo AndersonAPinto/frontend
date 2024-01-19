@@ -59,6 +59,8 @@ function Body() {
             <h1>Custo de Recarga de Veículos Elétricos</h1>
             <h3>Escolha a distribuidora de Luz:</h3>
             <button className='scroll-left' onClick={handleScrollLeft}></button>
+            <button className='scroll-right' onClick={handleScrollRight}></button>
+
             <div className="scroll_horizontal" ref={scrollRef}>
                 {siglas.map((data, index) => (
                     <div key={index} style={{ marginRight: '10px' }} onClick={() => returnSigla(data)} >
@@ -66,8 +68,7 @@ function Body() {
                     </div>
                 ))}
             </div>
-            
-            <button className='scroll-right' onClick={handleScrollRight}></button>
+
             <div><h2>{selectedSigla}</h2></div>
             
             <div className='navInput'>
